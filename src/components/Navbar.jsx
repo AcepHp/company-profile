@@ -8,14 +8,13 @@ const navigation = [
     { name: 'Services', href: '#' },
     { name: 'Product', href: '#' },
     { name: 'Portfolio', href: '#' },
-    { name: 'Insight', href: '#' },
 ]
 
 export default function Navbar() {
     return (
         <>
             {/* Top Bar */}
-            <div className="bg-[#1a4a9c] text-white text-sm py-2 px-4 sm:px-8 hidden md:flex flex-wrap justify-between items-center gap-y-2 font-montserrat shadow-md">
+            <div className="bg-[#1a4a9c] text-white text-sm py-[9px] px-4 sm:px-8 hidden md:flex flex-wrap justify-between items-center gap-y-2 font-montserrat shadow-md">
 
                 {/* Kontak */}
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-xs font-medium sm:text-sm">
@@ -239,7 +238,7 @@ export default function Navbar() {
                                     {navigation.map((item) =>
                                         item.dropdown ? (
                                             <Menu as="div" className="relative" key={item.name}>
-                                                <Menu.Button className="text-gray-700 hover:text-[#1a4a9c] inline-flex items-center gap-1 transition-colors duration-200">
+                                                <Menu.Button className="text-gray-700 hover:text-[#1a4a9c] inline-flex items-center md:gap-1 transition-colors duration-200">
                                                     {item.name}
                                                     <ChevronDownIcon className={`h-4 w-4 transition-transform duration-200 ${open ? 'rotate-180' : ''}`} />
                                                 </Menu.Button>
