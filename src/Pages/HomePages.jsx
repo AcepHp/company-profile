@@ -5,6 +5,7 @@ import AboutSection from '../components/AboutSection'
 import ServiceSection from '../components/ServiceSection'
 import ClientSection from '../components/ClientSection'
 import OurWorkSection from '../components/OurWorkSection'
+import TestimonialSection from '../components/TestimonialSection'
 
 export default function HomePages() {
     return (
@@ -15,6 +16,7 @@ export default function HomePages() {
             <ServiceSection/>
             <ClientSection/>
             <OurWorkSection/>
+            <TestimonialSection/>
             <main className="p-8">
                 <div className="h-[2000px] bg-gray-50">
                     <h2 className="text-2xl font-bold">Scroll untuk tes sticky</h2>
