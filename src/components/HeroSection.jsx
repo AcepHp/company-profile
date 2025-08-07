@@ -1,10 +1,10 @@
 export default function HeroSection() {
     return (
-        <section className="min-h-screen relative bg-gradient-to-br from-white via-blue-50 to-blue-100 overflow-hidden">
+        <section className="relative bg-[#d7f1ff] from-white via-blue-50 to-blue-100 overflow-hidden">
             {/* Background Decoration */}
-            <div className="absolute -top-20 -left-20 w-[600px] h-[600px] bg-blue-200 rounded-full opacity-30 blur-3xl z-0"></div>
+            <div className="absolute -top-20 -left-20 w-[600px] h-[600px] rounded-full opacity-30 blur-3xl z-0"></div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 MD:py-12 sm:py-20 mt-15 md:mt-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 md:py-20 sm:py-20 mt-15 md:mt-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-12">
                 {/* Text Content */}
                 <div className="w-full lg:w-1/2 text-center lg:text-left space-y-6">
                     <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold leading-tight text-gray-900">
