@@ -8,33 +8,33 @@ import { useRef } from "react";
 
 const testimonials = [
     {
-        name: "Randy Wijaya",
-        position: "Founder of Finloop",
-        feedback: "Fast, professional, and effective. We’ve seen significant growth after the redesign.",
+        name: "Andi Pratama",
+        position: "CTO at GlobalTech",
+        feedback: "Turing.id helped us hire top-tier remote developers in record time. Seamless process and great talent!",
         avatar: "https://i.pravatar.cc/150?img=5",
     },
     {
-        name: "Rizky Ramadhan",
-        position: "CEO of TechNova",
-        feedback: "GeekGarden transformed our digital presence with incredible results. Their team is top-notch!",
+        name: "Sarah Wijaya",
+        position: "CEO at FinPro",
+        feedback: "Thanks to Turing.id, we scaled our engineering team quickly without sacrificing quality.",
         avatar: "https://i.pravatar.cc/150?img=1",
     },
     {
-        name: "Sinta Dewi",
-        position: "Marketing Manager at KreatifID",
-        feedback: "The UI/UX they designed was beyond our expectations. Highly recommended!",
+        name: "Michael Santoso",
+        position: "Head of Product at NovaApp",
+        feedback: "The developers we hired through Turing.id exceeded our expectations in skill and communication.",
         avatar: "https://i.pravatar.cc/150?img=2",
     },
     {
-        name: "Dimas Saputra",
-        position: "CTO of CloudCore",
-        feedback: "Their developers are skilled, communicative, and delivered before the deadline. Fantastic!",
+        name: "Rina Kusuma",
+        position: "Project Manager at CloudWorks",
+        feedback: "Professional, reliable, and efficient. Turing.id made remote hiring stress-free.",
         avatar: "https://i.pravatar.cc/150?img=3",
     },
     {
-        name: "Ayunda Rahma",
-        position: "Project Lead at StartApp",
-        feedback: "Working with GeekGarden was a breeze. They understood our needs and executed flawlessly.",
+        name: "Budi Hartono",
+        position: "Founder of StartUpGo",
+        feedback: "From first interview to onboarding, Turing.id delivered an outstanding hiring experience.",
         avatar: "https://i.pravatar.cc/150?img=4",
     },
 ];
@@ -44,21 +44,20 @@ export default function TestimonialSection() {
     const nextRef = useRef(null);
 
     return (
-        <section className="bg-blue-50 py-20 px-4 sm:px-8 relative">
+        <section className="relative py-20 px-4 sm:px-8 bg-gradient-to-b from-blue-100 via-white to-blue-50">
             <div className="max-w-7xl mx-auto text-center">
-                <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
-                    What Our Clients Say
+                <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+                    Hear from Turing.id Clients
                 </h2>
-                <p className="text-gray-600 mb-10 max-w-xl mx-auto">
-                    Hear directly from our satisfied clients and partners who have experienced the GeekGarden difference.
+                <p className="text-gray-600 mb-10 max-w-2xl mx-auto text-lg">
+                    Discover how Turing.id has helped companies build high-performing remote teams worldwide.
                 </p>
 
-                {/* Slider wrapper with relative positioning for button placement */}
                 <div className="relative">
                     {/* Left arrow */}
                     <div
                         ref={prevRef}
-                        className="absolute top-1/2 -left-6 transform -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow-md cursor-pointer hover:bg-blue-100 transition"
+                        className="absolute top-1/2 -left-8 transform -translate-y-1/2 z-10 bg-white/70 backdrop-blur-md p-3 rounded-full shadow-lg cursor-pointer hover:scale-110 transition"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -68,14 +67,13 @@ export default function TestimonialSection() {
                     {/* Right arrow */}
                     <div
                         ref={nextRef}
-                        className="absolute top-1/2 -right-6 transform -translate-y-1/2 z-10 bg-white p-3 rounded-full shadow-md cursor-pointer hover:bg-blue-100 transition"
+                        className="absolute top-1/2 -right-8 transform -translate-y-1/2 z-10 bg-white/70 backdrop-blur-md p-3 rounded-full shadow-lg cursor-pointer hover:scale-110 transition"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                         </svg>
                     </div>
 
-                    {/* Swiper */}
                     <Swiper
                         modules={[Navigation, Autoplay]}
                         spaceBetween={30}
@@ -98,17 +96,18 @@ export default function TestimonialSection() {
                     >
                         {testimonials.map((item, index) => (
                             <SwiperSlide key={index}>
-                                <div className="bg-white h-full w-full shadow-xl rounded-2xl p-6 flex flex-col items-center justify-between text-center min-h-[330px] transition hover:scale-105 duration-300">
-                                    <img
-                                        src={item.avatar}
-                                        alt={item.name}
-                                        className="w-20 h-20 rounded-full object-cover mb-4"
-                                    />
-                                    <p className="text-gray-700 italic mb-4">"{item.feedback}"</p>
-                                    <div>
-                                        <h4 className="text-lg font-semibold text-gray-900">{item.name}</h4>
-                                        <span className="text-sm text-gray-500">{item.position}</span>
+                                <div className="bg-white/60 backdrop-blur-lg border border-white/30 shadow-lg rounded-2xl p-6 flex flex-col items-center text-center min-h-[330px] transition-transform hover:scale-105 duration-300">
+                                    <div className="relative">
+                                        <img
+                                            src={item.avatar}
+                                            alt={item.name}
+                                            className="w-20 h-20 rounded-full object-cover border-4 border-blue-500 shadow-lg"
+                                        />
+                                        <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 border-2 border-white rounded-full"></div>
                                     </div>
+                                    <p className="text-gray-700 italic my-4 text-base leading-relaxed">"{item.feedback}"</p>
+                                    <h4 className="text-lg font-semibold text-gray-900">{item.name}</h4>
+                                    <span className="text-sm text-gray-500">{item.position}</span>
                                 </div>
                             </SwiperSlide>
                         ))}
