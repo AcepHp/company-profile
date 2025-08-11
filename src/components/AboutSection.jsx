@@ -7,10 +7,10 @@ import {
 
 export default function AboutSection() {
     const stats = [
-        { id: 1, value: "10+", label: "Years of Experience", icon: BriefcaseIcon },
-        { id: 2, value: "95%", label: "SLA Success Rate", icon: CheckCircleIcon },
-        { id: 3, value: "50+", label: "Areas of Expertise", icon: ChartBarIcon },
-        { id: 4, value: "100+", label: "Clients Worldwide", icon: GlobeAltIcon },
+        { id: 1, value: "1,000+", label: "Talents Available", icon: BriefcaseIcon },
+        { id: 2, value: "98%", label: "Client Satisfaction Rate", icon: CheckCircleIcon },
+        { id: 3, value: "120+", label: "Tech Stacks", icon: ChartBarIcon },
+        { id: 4, value: "200+", label: "Global Clients", icon: GlobeAltIcon },
     ];
 
     return (
@@ -21,7 +21,7 @@ export default function AboutSection() {
                     {/* Left Title */}
                     <div className="lg:w-1/2">
                         <h2 className="text-xl sm:text-xl md:text-2xl font-bold text-[#0f172a] text-center lg:text-left">
-                            At GeekGarden, we're more than just Software House.
+                            At Turing.id, we connect top tech talents with global opportunities.
                         </h2>
                     </div>
                     {/* Right Placeholder */}
@@ -34,22 +34,19 @@ export default function AboutSection() {
                     <div className="flex-1 space-y-6">
                         <div className="text-[#334155] text-sm sm:text-base font-medium space-y-4 text-justify">
                             <p>
-                                For over a decade, our team in Indonesia has helped startups, SMEs,
-                                and enterprises grow with custom applications and scalable digital
-                                solutions. We work with clients worldwide, bridging ideas and
-                                execution through real-time collaboration, workshops, and full
-                                transparency.
+                                Turing.id is a platform that helps companies hire vetted remote software
+                                developers from around the world. We make it easy for businesses to build
+                                high-quality tech teams without geographical limitations.
                             </p>
                             <p>
-                                Whether you need to scale your team, streamline operations, or
-                                modernize your business, we offer IT Manpower Sharing or IT
-                                Outsourcing, Custom Software Development, and Digital
-                                Transformation Solutions to match your goals.
+                                Our talent pool covers a wide range of expertise, from frontend and backend
+                                development to AI, data engineering, and DevOps. Each talent is tested for
+                                technical and soft skills, ensuring they meet global standards.
                             </p>
                             <p>
-                                Certified by DUNS, PSE Kominfo, ISO 9001, and ISO 27001, we deliver
-                                secure, high-quality results you can trust. From consultation to
-                                deployment, we keep you involved every step of the way.
+                                With our rigorous vetting process, seamless onboarding, and dedicated support,
+                                we help companies scale faster, reduce hiring risks, and achieve their goals
+                                with confidence.
                             </p>
                         </div>
                     </div>
