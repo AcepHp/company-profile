@@ -42,43 +42,62 @@ export default function TestimonialSection() {
     const nextRef = useRef(null);
 
     return (
-        <section className="bg-blue-50 py-20 px-4 sm:px-8 relative">
+        <section className="bg-blue-50 py-16 px-4 sm:px-8 md:px-12 relative">
             <div className="max-w-7xl mx-auto text-center">
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
                     What Our Clients Say
                 </h2>
-                <p className="text-gray-600 mb-10 max-w-xl mx-auto">
+                <p className="text-gray-600 mb-12 max-w-xl mx-auto px-2 sm:px-0">
                     Hear directly from our satisfied clients and partners who have experienced the GeekGarden difference.
                 </p>
 
-                {/* Slider wrapper with relative positioning for button placement */}
                 <div className="relative">
                     {/* Left arrow */}
-                    <div
+                    <button
+                        aria-label="Previous testimonial"
                         ref={prevRef}
-                        className="absolute top-1/2 -left-8 transform -translate-y-1/2 z-10 bg-white/70 backdrop-blur-md p-3 rounded-full shadow-lg cursor-pointer hover:scale-110 transition"
+                        className="absolute top-1/2 left-0 sm:-left-8 transform -translate-y-1/2 z-20 bg-white/90 backdrop-blur-md p-3 rounded-full shadow-lg cursor-pointer hover:scale-110 transition focus:outline-none focus:ring-2 focus:ring-blue-600"
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-6 h-6 text-blue-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <path d="M15 19l-7-7 7-7" />
                         </svg>
-                    </div>
+                    </button>
 
                     {/* Right arrow */}
-                    <div
+                    <button
+                        aria-label="Next testimonial"
                         ref={nextRef}
-                        className="absolute top-1/2 -right-8 transform -translate-y-1/2 z-10 bg-white/70 backdrop-blur-md p-3 rounded-full shadow-lg cursor-pointer hover:scale-110 transition"
+                        className="absolute top-1/2 right-0 sm:-right-8 transform -translate-y-1/2 z-20 bg-white/90 backdrop-blur-md p-3 rounded-full shadow-lg cursor-pointer hover:scale-110 transition focus:outline-none focus:ring-2 focus:ring-blue-600"
                     >
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-6 h-6 text-blue-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <path d="M9 5l7 7-7 7" />
                         </svg>
-                    </div>
+                    </button>
 
                     <Swiper
                         modules={[Navigation, Autoplay]}
-                        spaceBetween={30}
+                        spaceBetween={24}
                         slidesPerView={1}
                         loop={true}
-                        autoplay={{ delay: 3500 }}
+                        autoplay={{ delay: 3500, disableOnInteraction: true }}
                         navigation={{
                             prevEl: prevRef.current,
                             nextEl: nextRef.current,
@@ -88,14 +107,23 @@ export default function TestimonialSection() {
                             swiper.params.navigation.nextEl = nextRef.current;
                         }}
                         breakpoints={{
-                            640: { slidesPerView: 1 },
-                            768: { slidesPerView: 2 },
-                            1024: { slidesPerView: 3 },
+                            640: {
+                                slidesPerView: 1,
+                                spaceBetween: 24,
+                            },
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 30,
+                            },
+                            1024: {
+                                slidesPerView: 3,
+                                spaceBetween: 40,
+                            },
                         }}
                     >
                         {testimonials.map((item, index) => (
                             <SwiperSlide key={index}>
-                                <div className="bg-white/60 backdrop-blur-lg border border-white/30 shadow-lg rounded-2xl p-6 flex flex-col items-center text-center min-h-[330px] transition-transform hover:scale-105 duration-300">
+                                <div className="bg-white/70 backdrop-blur-lg border border-white/30 shadow-lg rounded-2xl p-6 flex flex-col items-center text-center min-h-[330px] transition-transform hover:scale-105 duration-300">
                                     <div className="relative">
                                         <img
                                             src={item.avatar}
