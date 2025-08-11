@@ -1,5 +1,3 @@
-"use client";
-
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export default function LocationAndContactSection() {
@@ -20,21 +18,21 @@ export default function LocationAndContactSection() {
                                 <MapPinIcon className="w-6 h-6 text-blue-600 mt-1" />
                                 <div>
                                     <p className="font-semibold text-[#0f172a]">Address</p>
-                                    <p className="text-gray-700">Jl. Cisaranten Kulon No. 17A, Bandung</p>
+                                    <p className="text-gray-700">Jl. Ujungjaya-Conggeang, Desa Cipelang, Kecamatan Ujungjaya, Sumedang Jawa Barat</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
                                 <PhoneIcon className="w-6 h-6 text-blue-600 mt-1" />
                                 <div>
                                     <p className="font-semibold text-[#0f172a]">Phone</p>
-                                    <p className="text-gray-700">+62 878-2335-3749</p>
+                                    <p className="text-gray-700">+62 82316167554</p>
                                 </div>
                             </div>
                             <div className="flex items-start gap-4">
                                 <EnvelopeIcon className="w-6 h-6 text-blue-600 mt-1" />
                                 <div>
                                     <p className="font-semibold text-[#0f172a]">Email</p>
-                                    <p className="text-gray-700">geekgardenbdg@gmail.com</p>
+                                    <p className="text-gray-700">turing.id@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -43,7 +41,7 @@ export default function LocationAndContactSection() {
                     {/* Right: Google Maps */}
                     <div className="w-full h-[300px] md:h-full">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9901601939436!2d107.68712227410753!3d-6.892355993099176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e98e1cf92d17%3A0x9f8c620d02ef2c93!2sGeekGarden!5e0!3m2!1sen!2sid!4v1697464264841!5m2!1sen!2sid"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.9878946467843!2d108.16592827410373!3d-6.382124193606959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f21e4f54e5f4d%3A0x2e515a7ab4b4ac9a!2sCipelang%2C%20Kec.%20Ujungjaya%2C%20Kabupaten%20Sumedang%2C%20Jawa%20Barat!5e0!3m2!1sen!2sid!4v1697464264841!5m2!1sen!2sid"
                             width="100%"
                             height="100%"
                             className="rounded-lg shadow-md border border-gray-200"
