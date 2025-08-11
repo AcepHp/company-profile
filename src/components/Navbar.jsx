@@ -4,9 +4,9 @@ import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outli
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from '@heroicons/react/16/solid' // Reverted to original imports
 
 const navigation = [
-    { name: 'Company', dropdown: ['About', 'Team'] },
+    { name: 'Home', href:"#"  },
+    { name: 'About', href:"#"  },
     { name: 'Services', href: '#' },
-    { name: 'Product', href: '#' },
     { name: 'Portfolio', href: '#' },
 ]
 
@@ -18,26 +18,26 @@ export default function Navbar() {
 
                 {/* Kontak */}
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-1 text-xs font-medium sm:text-sm">
-                    <div className="flex items-center gap-2">
+                    <div className="flex items-center justify-center gap-2">
                         <MapPinIcon className="h-4 w-4 text-white" />
                         <span>Sumedang, Indonesia</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <EnvelopeIcon className="h-4 w-4 text-white" />
-                        <span>info@example.id</span>
+                        <span>turing.id@gmail.com</span>
                     </div>
                     <div className="flex items-center gap-2">
                         <PhoneIcon className="h-4 w-4 text-white" />
-                        <span>+628112633681</span>
+                        <span>+6282316167554</span>
                     </div>
                 </div>
 
                 {/* Main Navbar */}
                 <div className="flex items-center gap-8 text-xs sm:text-sm w-full justify-center sm:justify-end sm:w-auto">
-                    <a href="#" className="hover:opacity-80 transition-opacity" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/acephp/" target='__blank' className="hover:opacity-80 transition-opacity" aria-label="LinkedIn">
                         <img src="./linkedin.svg" alt="LinkedIn" className="w-4 h-auto" />
                     </a>
-                    <a href="#" className="hover:opacity-80 transition-opacity" aria-label="Instagram">
+                    <a href="https://www.instagram.com/acephp_/" target='__blank' className="hover:opacity-80 transition-opacity" aria-label="Instagram">
                         <img src="./instagram2.svg" alt="Instagram" className="w-4 h-auto" />
                     </a>
                     <a href="#" className="hover:opacity-80 transition-opacity" aria-label="TikTok">
