@@ -8,33 +8,33 @@ import { useRef } from "react";
 
 const testimonials = [
     {
-        name: "Andi Pratama",
-        position: "CTO at GlobalTech",
-        feedback: "Turing.id helped us hire top-tier remote developers in record time. Seamless process and great talent!",
+        name: "Randy Wijaya",
+        position: "Founder of Finloop",
+        feedback: "Fast, professional, and effective. We’ve seen significant growth after the redesign.",
         avatar: "https://i.pravatar.cc/150?img=5",
     },
     {
-        name: "Sarah Wijaya",
-        position: "CEO at FinPro",
-        feedback: "Thanks to Turing.id, we scaled our engineering team quickly without sacrificing quality.",
+        name: "Rizky Ramadhan",
+        position: "CEO of TechNova",
+        feedback: "GeekGarden transformed our digital presence with incredible results. Their team is top-notch!",
         avatar: "https://i.pravatar.cc/150?img=1",
     },
     {
-        name: "Michael Santoso",
-        position: "Head of Product at NovaApp",
-        feedback: "The developers we hired through Turing.id exceeded our expectations in skill and communication.",
+        name: "Sinta Dewi",
+        position: "Marketing Manager at KreatifID",
+        feedback: "The UI/UX they designed was beyond our expectations. Highly recommended!",
         avatar: "https://i.pravatar.cc/150?img=2",
     },
     {
-        name: "Rina Kusuma",
-        position: "Project Manager at CloudWorks",
-        feedback: "Professional, reliable, and efficient. Turing.id made remote hiring stress-free.",
+        name: "Dimas Saputra",
+        position: "CTO of CloudCore",
+        feedback: "Their developers are skilled, communicative, and delivered before the deadline. Fantastic!",
         avatar: "https://i.pravatar.cc/150?img=3",
     },
     {
-        name: "Budi Hartono",
-        position: "Founder of StartUpGo",
-        feedback: "From first interview to onboarding, Turing.id delivered an outstanding hiring experience.",
+        name: "Ayunda Rahma",
+        position: "Project Lead at StartApp",
+        feedback: "Working with GeekGarden was a breeze. They understood our needs and executed flawlessly.",
         avatar: "https://i.pravatar.cc/150?img=4",
     },
 ];
@@ -44,15 +44,16 @@ export default function TestimonialSection() {
     const nextRef = useRef(null);
 
     return (
-        <section className="relative py-20 px-4 sm:px-8 bg-gradient-to-b from-blue-100 via-white to-blue-50">
+        <section className="bg-blue-50 py-20 px-4 sm:px-8 relative">
             <div className="max-w-7xl mx-auto text-center">
-                <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-                    Hear from Turing.id Clients
+                <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">
+                    What Our Clients Say
                 </h2>
-                <p className="text-gray-600 mb-10 max-w-2xl mx-auto text-lg">
-                    Discover how Turing.id has helped companies build high-performing remote teams worldwide.
+                <p className="text-gray-600 mb-10 max-w-xl mx-auto">
+                    Hear directly from our satisfied clients and partners who have experienced the GeekGarden difference.
                 </p>
 
+                {/* Slider wrapper with relative positioning for button placement */}
                 <div className="relative">
                     {/* Left arrow */}
                     <div
