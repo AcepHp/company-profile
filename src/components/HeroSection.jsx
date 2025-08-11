@@ -28,6 +28,7 @@ export default function HeroSection() {
                 <div className="w-full lg:w-1/2 flex justify-center relative">
                     <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-130 md:h-100 rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
                         <img
+                            rel="preload"
                             src="./hero-section.jpg"
                             alt="Team working"
                             className="object-cover w-full h-full scale-110 hover:scale-125 transition-transform duration-700"
